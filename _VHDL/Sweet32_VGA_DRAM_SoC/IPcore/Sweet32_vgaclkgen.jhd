@@ -1,0 +1,5 @@
+MODULE Sweet32_vgaclkgen DEFIN Sweet32_vgaclkgen.vhd
+	SUBMODULE EHXPLLJ
+		INSTANCE PLLInst_0
+	SUBMODULE VLO
+		INSTANCE scuba_vlo_inst

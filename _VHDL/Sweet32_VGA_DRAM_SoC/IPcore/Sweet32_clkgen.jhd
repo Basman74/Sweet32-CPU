@@ -1,0 +1,5 @@
+MODULE Sweet32_clkgen DEFIN Sweet32_clkgen.vhd
+	SUBMODULE EHXPLLJ
+		INSTANCE PLLInst_0
+	SUBMODULE VLO
+		INSTANCE scuba_vlo_inst
