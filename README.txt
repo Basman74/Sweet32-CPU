@@ -9,7 +9,7 @@ Sweet32's c compiler sources are released under the 2-clause FreeBSD, while VHDL
 WHAT THIS REPOSITORY CONTAINS:
 _VHDL folder = VHDL sources for 'minimal' and 'complex' Sweet32 SoC designs for use in an FPGA device. Sources posted were tested on a Lattice MachXO2 FPGA but can easily be ported to FPGA parts from other vendors too. Further details can be found in the 'user docs' folder.
 
-\Software toolchain = Contains a fork of Alexey Frunze's Smaller-C project, to target the Sweet32 CPU. Please note this is a partially complete port and works well for even intermediate program development. Not quite self-compiling yet however.. :-) Also contained within this folder is Xark's excellent Macro Assembler targetting the Sweet32 CPU (and WAY BETTER than my earlier FreeBASIC effort of the same :-)
+\Software toolchain = Contains a fork of Alexey Frunze's Smaller-C project, to target the Sweet32 CPU. Please note this is a partially complete port and appears to work well enough for even intermediate program development. Not quite self-compiling yet however.. :-) Also contained within this folder is Xark's excellent Macro Assembler targetting the Sweet32 CPU (and WAY BETTER than my earlier FreeBASIC effort of the same :-)
 
 \User docs = Contains a general overview of the Sweet32 CPU, BIU (Bus Interface Unit) and selected peripherals. It also explains how to use the integrated Monitor ROM as well as a breakdown of the .SWE firmware file format for the reliable upload of executable binary files to the Sweet32 via serial terminal and inbuilt monitor ROM.
 
