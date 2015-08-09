@@ -1,5 +1,4 @@
 Smaller-C is Copyright (c) 2012-2015, Alexey Frunze 
-(Fromal permission to redistribute his modified sources pending :-)
 Compiler backend modification for the Sweet32 CPU target done by Valentin Angelovski
 All rights reserved.
 
