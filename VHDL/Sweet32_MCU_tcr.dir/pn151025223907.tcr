@@ -1,0 +1,5 @@
+#Start recording tcl command: 10/25/2015 22:37:55
+#Project Location: C:/qb8086/Sweet32/VHDL; Project name: Sweet32_MCU
+prj_project open "C:/qb8086/Sweet32/VHDL/Sweet32_FleaFPGA_Uno_E1.ldf"
+prj_src remove "C:/qb8086/Sweet32/VHDL/test/test.spf"
+#Stop recording: 10/25/2015 22:39:07

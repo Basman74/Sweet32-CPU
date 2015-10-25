@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="Sweet32_MCU" device="LCMXO2-7000HE-4TG144C" default_implementation="impl">
+    <Options>
+        <Option name="HDL type" value="VHDL"/>
+    </Options>
+    <Implementation title="impl" dir="impl" description="impl" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="simple_ADC" lib="work" top="FleaFPGA_2v4"/>
+        <Source name="RTL/FleaFPGA_2v4_top.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="work" top_module="FleaFPGA_2v4"/>
+        </Source>
+        <Source name="RTL/Sweet32_BIU_DRAM_VGA.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="RTL/Sweet32_v1_core.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="work"/>
+        </Source>
+        <Source name="RTL/Sweet32_regfile32x16.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="work"/>
+        </Source>
+        <Source name="RTL/simple_ADC.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="work"/>
+        </Source>
+        <Source name="RTL/simple_PWM.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="work"/>
+        </Source>
+        <Source name="RTL/simple_UART.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="work"/>
+        </Source>
+        <Source name="RTL/uart_tx.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="RTL/uart_rx.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="RTL/Sweet32_SRAM_upper.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="RTL/Sweet32_SRAM_lower.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="RTL/VGA/vga80x40.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="RTL/VGA/losr.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="RTL/VGA/ctrm.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="RTL/VGA/dp_ram.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="RTL/VGA/CGA_font_ub.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="RTL/VGA/CGA_font_lb.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="IPcore/Sweet32_vgaclkgen.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="IPcore/Sweet32_clkgen.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="RTL/Common.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="RTL/SdramCntl.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="RTL/io_ps2_com.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="FleaFPGA_2v4_top.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="impl/FleaFPGA_classic.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Sweet32_MCU_VGA1.sty"/>
+</BaliProject>

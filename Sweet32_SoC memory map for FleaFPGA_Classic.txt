@@ -1,0 +1,31 @@
+Sweet32 SoC SYSTEM MEMORY MAP FOR THE 'FleaFPGA Classic' HARDWARE PLATFORM:
+===========================================================================
+
+     Memory Map:              Description:
+     -------------------------------------
+0x00000000->0x00007FFF = (Read/write) Boot ROM / scratchpad area
+0x10000000->0x11FFFFFF = (Read/write) External DRAM
+0x20000000->0x20003FFF = (Read/write) VGA Character RAM
+0x30000000->0x30003FFF = (Read/write) VGA Font bitmap RAM
+0x70000000->0x7FFFFFFF = (Read/write) Peripheral area
+
+     Peripheral Mapping (Note: All ports are 16bits wide, so MOVW op *MUST* be used!):
+     ---------------------------------------------------------------------------------
+0x70000000 = 			(Read/write) UART0 Port status + data transfer register
+0x70000002 = 			(write)	UART0 Event reset register 
+0x70000004 = 			(Read/write) UART0 Clock divisor register 
+0x70000006 = 			(Read)	UART0 detected minimum bit-clock register 
+0x70000020 = 			(write)	TIMER0 Count reload register
+0x70000022 = 			(Read/write) TIMER0 Control register
+0x70000030 = 			(Write)	User LEDs output control register
+0x70000038 = 			(Read/write) PS/2 Keyboard TX/RX port status bits + data transfer buffer
+0x7000003A = 			(write)	PS/2 Event reset register 
+0x70000040 = 			(write)	Audio PWM left channel output data register 
+0x70000042 = 			(write)	Audio PWM right channel output data register
+0x70000050 = 			(Read/write) VGA ctrl
+0x70000052 = 			(Read/write) VGA cursor x 
+0x70000054 = 			(Read/write) VGA cursor y
+0x70000060 = 			(Read/write) 32-bit CPU cycle counter - highest 16-bits
+0x70000062 = 			(Read/write) 32-bit CPU cycle counter - lowest 16-bits 
+0x70000080 = 			(Read/write) GPIO Port 'A' data transfer register (16 bit wide port, muxed with SPI0 and UART0)
+0x70000082 = 			(Write)	GPIO Port 'A' bitwise input/output mode config register

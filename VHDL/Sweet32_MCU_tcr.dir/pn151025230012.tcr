@@ -1,0 +1,25 @@
+#Start recording tcl command: 10/25/2015 22:42:14
+#Project Location: C:/qb8086/Sweet32/VHDL; Project name: Sweet32_MCU
+prj_project open "C:/qb8086/Sweet32/VHDL/Sweet32_FleaFPGA_Uno_E1.ldf"
+prj_run Translate -impl impl
+prj_run Translate -impl impl
+prj_run Translate -impl impl
+prj_run Map -impl impl
+prj_src remove "C:/qb8086/Sweet32/VHDL/Sweet32_MCU_VGA.xcf"
+prj_run PAR -impl impl
+prj_run Export -impl impl
+prj_src add -exclude "C:/qb8086/Sweet32/VHDL/impl/impl.xcf"
+prj_src enable "C:/qb8086/Sweet32/VHDL/impl/impl.xcf"
+pgr_project save "C:/qb8086/Sweet32/VHDL/impl/impl.xcf"
+prj_src remove "C:/qb8086/Sweet32/VHDL/impl/impl.xcf"
+pgr_project close
+prj_src add -exclude "C:/qb8086/Sweet32/VHDL/impl/FleaFPGA_Uno_E1.xcf"
+prj_src enable "C:/qb8086/Sweet32/VHDL/impl/FleaFPGA_Uno_E1.xcf"
+pgr_project save "C:/qb8086/Sweet32/VHDL/impl/FleaFPGA_Uno_E1.xcf"
+prj_run Export -impl impl
+prj_run Export -impl impl
+prj_run Synthesis -impl impl
+prj_run Export -impl impl
+prj_project save
+prj_project close
+#Stop recording: 10/25/2015 23:00:12

@@ -1,0 +1,11 @@
+TabWidth: 4
+UseTab: Always
+IndentWidth: 4
+BreakBeforeBraces: Allman
+#KJ was false
+AllowShortIfStatementsOnASingleLine: true
+IndentCaseLabels: false
+ColumnLimit: 0
+# KJ
+AlignTrailingComments: true
+
