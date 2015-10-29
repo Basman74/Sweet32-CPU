@@ -1,5 +1,6 @@
 // TinyBASIC program, Authored by Mike Field
 // Ported from the Arduino to the Sweet32 CPU by Valentin Angelovski 
+// Source provided as-is. Use at your own risk.
 
 
 unsigned char 	linelen = 0;

@@ -1,3 +1,7 @@
+// Fake6502 emulator (minimalistic and functional 6502 emulator)
+// Written by: Mike Chambers
+// Source provided as-is. Use at your own risk.
+
 #define PROGRAM_BASE 0x10000000
 
 #define uint8_t unsigned char
