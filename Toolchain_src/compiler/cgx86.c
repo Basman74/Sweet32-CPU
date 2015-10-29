@@ -3534,7 +3534,10 @@ void GenExpr1(void)
 		  		
 		}
 		else
-			printf2("ERROR 612");
+		{
+			printf2("\tmul\tR0,R0,R2");  printf2(" ; mulu	ecx"); puts2(""); // ### TEMPORARY!! ###
+		}
+		//	printf2("ERROR 612");
 
           break;
         case tokOpIndIdent:
@@ -3654,8 +3657,18 @@ void GenExpr1(void)
         case tokOpAcc:
         case tokOpIndAcc:
           // right operand in cx already
-          GenPrintInstr1Operand(instr, 0,
-                                X86OpRegCWord, 0);
+          //GenPrintInstr1Operand(instr, 0,
+          //                      X86OpRegCWord, 0);
+
+		  if(instr == X86InstrIdiv)
+		  {
+				printf2("\tgetpc   R15,#3"); puts2("");
+				printf2("\tMJMP\tDivide_U1616"); puts2("");			  
+		  }
+		  else
+		  {
+			puts2("ERROR 696");
+		  }
           break;
         case tokOpIndIdent:
           if (v % 16 - 8 != SizeOfWord)

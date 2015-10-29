@@ -96,7 +96,7 @@ ACKNOWLEDGEMENTS/THANKS GOES OUT TO:
 	  Sweet32's c compiler https://github.com/alexfru/SmallerC
 	- Xark (of XarkLabs) for his excellent (and blazingly quick!) macro assembler 
 	  for sweet32 https://github.com/XarkLabs
-	- Mike Chambers for his Sweet32 emulator program
+	- Mike Chambers for his Sweet32 and Fake6502 emulator programs.
 
 Sweet32's c compiler sources are released under the 2-clause FreeBSD, while VHDL 
 sources are released under LGPL 2.1
